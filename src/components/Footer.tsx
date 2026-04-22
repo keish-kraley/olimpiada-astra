@@ -11,7 +11,7 @@ export default function Footer() {
             </h3>
             <div className="flex flex-col gap-4">
               <a
-                href="https://www.grupoastra.com.br"
+                href="https://loja.astra-sa.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -30,21 +30,8 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    src="/img/logo-japi.gif"
+                    src="/img/logo-japi.png"
                     alt="Logo Japi"
-                    width={60}
-                    height={20}
-                    className="h-6 w-auto"
-                  />
-                </a>
-                <a
-                  href="https://www.integral-sa.com.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logo-integral.gif"
-                    alt="Logo Integral"
                     width={60}
                     height={20}
                     className="h-6 w-auto"
@@ -122,12 +109,12 @@ export default function Footer() {
                   />
                 </svg>
                 <a
-                  href="https://www.grupoastra.com.br"
+                  href="https://loja.astra-sa.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-astra-blue hover:text-astra-blue-light transition-colors"
                 >
-                  www.grupoastra.com.br
+                  loja.astra-sa.com
                 </a>
               </div>
             </div>
@@ -141,7 +128,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-4">
             <a
-              href="https://www.facebook.com/grupoastra"
+              href="https://www.facebook.com/aabordasoficial"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-astra-blue transition-colors"
@@ -152,7 +139,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://www.youtube.com/grupoastra"
+              href="https://www.youtube.com/aabordasoficial"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-red-600 transition-colors"
