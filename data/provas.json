@@ -1,0 +1,142 @@
+[
+  {
+    "id": "p1",
+    "name": "15ª Edição — Primeira Fase",
+    "file": "/pdf/15-edicao-primeira-fase.pdf",
+    "year": "2010",
+    "category": "prova"
+  },
+  {
+    "id": "p2",
+    "name": "15ª Edição — Segunda Fase",
+    "file": "/pdf/15-edicao-segunda-fase.pdf",
+    "year": "2010",
+    "category": "prova"
+  },
+  {
+    "id": "p3",
+    "name": "16ª Edição — Primeira Fase",
+    "file": "/pdf/16-edicao-primeira-fase.pdf",
+    "year": "2011",
+    "category": "prova"
+  },
+  {
+    "id": "p4",
+    "name": "16ª Edição — Segunda Fase",
+    "file": "/pdf/16-edicao-segunda-fase.pdf",
+    "year": "2011",
+    "category": "prova"
+  },
+  {
+    "id": "p5",
+    "name": "17ª Edição — Primeira Fase",
+    "file": "/pdf/17-edicao-primeira-fase.pdf",
+    "year": "2012",
+    "category": "prova"
+  },
+  {
+    "id": "p6",
+    "name": "17ª Edição — Segunda Fase",
+    "file": "/pdf/17-edicao-segunda-fase.pdf",
+    "year": "2012",
+    "category": "prova"
+  },
+  {
+    "id": "p7",
+    "name": "18ª Edição — Segunda Fase",
+    "file": "/pdf/18-edicao-segunda-fase.pdf",
+    "year": "2013",
+    "category": "prova"
+  },
+  {
+    "id": "g1",
+    "name": "Prova e Gabarito — 2010",
+    "file": "/pdf/2010-prova-e-gabarito.pdf",
+    "year": "2010",
+    "category": "gabarito"
+  },
+  {
+    "id": "g2",
+    "name": "Prova e Gabarito — 2011",
+    "file": "/pdf/2011-prova-e-gabarito.pdf",
+    "year": "2011",
+    "category": "gabarito"
+  },
+  {
+    "id": "g3",
+    "name": "Prova e Gabarito — 2012",
+    "file": "/pdf/2012-prova-e-gabarito.pdf",
+    "year": "2012",
+    "category": "gabarito"
+  },
+  {
+    "id": "g4",
+    "name": "Gabarito 17ª Olimpíada 2012 (1ª Fase)",
+    "file": "/pdf/gabarito-17aolimpiada2012fafase.pdf",
+    "year": "2012",
+    "category": "gabarito"
+  },
+  {
+    "id": "g5",
+    "name": "Gabarito — 1ª Fase",
+    "file": "/pdf/gabarito-1fase.pdf",
+    "year": "2024",
+    "category": "gabarito"
+  },
+  {
+    "id": "g6",
+    "name": "Gabarito — 2ª Fase (2024)",
+    "file": "/pdf/gabarito-2fase-olimpiada2024.pdf",
+    "year": "2024",
+    "category": "gabarito"
+  },
+  {
+    "id": "g7",
+    "name": "Gabarito — 2ª Fase",
+    "file": "/pdf/gabarito-2fase.pdf",
+    "year": "2024",
+    "category": "gabarito"
+  },
+  {
+    "id": "g8",
+    "name": "Gabarito — 1ª Fase (2025)",
+    "file": "/pdf/gabarito-1fase-olimpiada2025.pdf",
+    "year": "2025",
+    "category": "gabarito"
+  },
+  {
+    "id": "d1",
+    "name": "Regulamento — 2013",
+    "file": "/pdf/regulamento-2013.pdf",
+    "year": "2013",
+    "category": "documento"
+  },
+  {
+    "id": "d2",
+    "name": "Regulamento — 2024",
+    "file": "/pdf/regulamento-2024.pdf",
+    "year": "2024",
+    "category": "documento"
+  },
+  {
+    "id": "d3",
+    "name": "Regulamento — 2025",
+    "file": "/pdf/regulamento-2025.pdf",
+    "year": "2025",
+    "category": "documento"
+  },
+  {
+    "id": "d4",
+    "name": "Ficha de Inscrição e Termo de Consentimento",
+    "file": "/pdf/ficha-inscricao-e-termo.pdf",
+    "year": "2024",
+    "category": "documento"
+  },
+  {
+    "id": "d5",
+    "name": "Termo de Consentimento",
+    "file": "/pdf/termo-de-consentimento.pdf",
+    "year": "2024",
+    "category": "documento"
+  }
+]

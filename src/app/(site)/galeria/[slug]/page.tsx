@@ -1,12 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { findEventBySlug, getAllEventSlugs } from "@/lib/gallery-data";
-import galleryImages from "@/lib/gallery-images.json";
+import { getGalleryEvents } from "@/lib/data-store";
 import GalleryGrid from "@/components/GalleryGrid";
 
-export function generateStaticParams() {
-  return getAllEventSlugs().map((slug) => ({ slug }));
-}
+export const dynamic = "force-dynamic";
 
 export default async function GalleryDetailPage({
   params,
@@ -14,15 +11,12 @@ export default async function GalleryDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const result = findEventBySlug(slug);
-  const images =
-    (galleryImages as Record<string, string[]>)[slug] ?? [];
+  const events = getGalleryEvents();
+  const event = events.find((e) => e.slug === slug);
 
-  if (!result) {
+  if (!event) {
     notFound();
   }
-
-  const { event, edition } = result;
 
   return (
     <>
@@ -30,14 +24,14 @@ export default async function GalleryDetailPage({
       <section className="banner-bg banner-border relative py-12 sm:py-20">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-sm text-white/60 mb-2">
-            {edition.edition} — {edition.year}
+            {event.year}
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-white">
             {event.title}
           </h1>
           <p className="mt-3 text-white/80">{event.description}</p>
           <p className="mt-2 text-sm text-white/50">
-            {images.length} fotos
+            {event.images.length} fotos
           </p>
         </div>
       </section>
@@ -70,7 +64,7 @@ export default async function GalleryDetailPage({
       {/* Photo Grid */}
       <section className="py-8 sm:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <GalleryGrid slug={slug} images={images} />
+          <GalleryGrid slug={slug} images={event.images} />
         </div>
       </section>
     </>

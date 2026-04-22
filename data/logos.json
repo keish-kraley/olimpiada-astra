@@ -1,0 +1,10 @@
+{
+  "mainLogo": "/img/astra-logo.svg",
+  "partnerLogos": [
+    {
+      "name": "Japi",
+      "src": "/img/logo-japi.png",
+      "href": "https://www.japi.com.br"
+    }
+  ]
+}
