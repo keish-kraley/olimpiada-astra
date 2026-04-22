@@ -16,7 +16,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/img/logo-astra.png"
+                  src="/img/astra-logo.svg"
                   alt="Logo Astra"
                   width={100}
                   height={30}

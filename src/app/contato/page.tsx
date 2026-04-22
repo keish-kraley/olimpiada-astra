@@ -212,7 +212,7 @@ export default function ContatoPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gray-50 rounded-2xl p-8 sm:p-12 flex flex-col sm:flex-row items-center gap-8">
             <Image
-              src="/img/logo-astra.png"
+              src="/img/astra-logo.svg"
               alt="Logo Astra"
               width={150}
               height={45}

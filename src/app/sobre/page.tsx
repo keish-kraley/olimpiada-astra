@@ -221,7 +221,7 @@ export default function SobrePage() {
           </p>
           <div className="flex items-center justify-center gap-8">
             <Image
-              src="/img/logo-astra.png"
+              src="/img/astra-logo.svg"
               alt="Logo Astra"
               width={120}
               height={36}
