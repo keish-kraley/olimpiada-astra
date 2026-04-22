@@ -159,7 +159,7 @@ export default function ContatoPage() {
           </h2>
           <div className="flex justify-center gap-6">
             <a
-              href="https://www.facebook.com/aabordasoficial"
+              href="https://www.facebook.com/astraoficialbr"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-white rounded-xl px-6 py-4 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
@@ -174,7 +174,7 @@ export default function ContatoPage() {
               <span className="font-medium text-gray-700">Facebook</span>
             </a>
             <a
-              href="https://www.youtube.com/aabordasoficial"
+              href="https://www.youtube.com/astraoficialbr"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-white rounded-xl px-6 py-4 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
@@ -189,7 +189,7 @@ export default function ContatoPage() {
               <span className="font-medium text-gray-700">YouTube</span>
             </a>
             <a
-              href="https://www.linkedin.com/company/aabordasoficial"
+              href="https://www.linkedin.com/company/astra-industria-e-comercio-sa"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-white rounded-xl px-6 py-4 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
