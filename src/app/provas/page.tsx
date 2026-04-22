@@ -79,6 +79,26 @@ const gabaritos = [
     file: "/pdf/gabarito-17aolimpiada2012fafase.pdf",
     year: "2012",
   },
+  {
+    name: "Gabarito — 1ª Fase",
+    file: "/pdf/gabarito-1fase.pdf",
+    year: "2024",
+  },
+  {
+    name: "Gabarito — 2ª Fase (2024)",
+    file: "/pdf/gabarito-2fase-olimpiada2024.pdf",
+    year: "2024",
+  },
+  {
+    name: "Gabarito — 2ª Fase",
+    file: "/pdf/gabarito-2fase.pdf",
+    year: "2024",
+  },
+  {
+    name: "Gabarito — 1ª Fase (2025)",
+    file: "/pdf/gabarito-1fase-olimpiada2025.pdf",
+    year: "2025",
+  },
 ];
 
 const documents = [
@@ -86,6 +106,26 @@ const documents = [
     name: "Regulamento — 2013",
     file: "/pdf/regulamento-2013.pdf",
     year: "2013",
+  },
+  {
+    name: "Regulamento — 2024",
+    file: "/pdf/regulamento-2024.pdf",
+    year: "2024",
+  },
+  {
+    name: "Regulamento — 2025",
+    file: "/pdf/regulamento-2025.pdf",
+    year: "2025",
+  },
+  {
+    name: "Ficha de Inscrição e Termo de Consentimento",
+    file: "/pdf/ficha-inscricao-e-termo.pdf",
+    year: "2024",
+  },
+  {
+    name: "Termo de Consentimento",
+    file: "/pdf/termo-de-consentimento.pdf",
+    year: "2024",
   },
 ];
 

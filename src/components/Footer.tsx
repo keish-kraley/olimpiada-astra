@@ -128,7 +128,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-4">
             <a
-              href="https://www.facebook.com/aabordasoficial"
+              href="https://www.facebook.com/astraoficialbr"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-astra-blue transition-colors"
@@ -139,7 +139,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://www.youtube.com/aabordasoficial"
+              href="https://www.youtube.com/astraoficialbr"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-red-600 transition-colors"
