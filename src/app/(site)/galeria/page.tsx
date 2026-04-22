@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { galleryEditions } from "@/lib/gallery-data";
-import type { GalleryEvent } from "@/lib/gallery-data";
+import { getGalleryEvents, GalleryEvent } from "@/lib/data-store";
 
 export const metadata: Metadata = {
   title: "Galeria | Olimpíada Astra de Matemática",
@@ -10,26 +9,31 @@ export const metadata: Metadata = {
     "Galeria de fotos das edições anteriores da Olimpíada Astra de Matemática.",
 };
 
+export const dynamic = "force-dynamic";
+
 function EventCard({ event }: { event: GalleryEvent }) {
+  const thumbnail = event.images[0];
   return (
     <Link
       href={`/galeria/${event.slug}`}
       className="group bg-white rounded-xl overflow-hidden shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5"
     >
-      <div className="aspect-video relative overflow-hidden">
-        <Image
-          src={`/galeria/${event.slug}/${event.thumbnail}`}
-          alt={event.title}
-          fill
-          className="object-cover group-hover:scale-105 transition-transform duration-300"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
+      <div className="aspect-video relative overflow-hidden bg-gray-200">
+        {thumbnail && (
+          <Image
+            src={`/galeria/${event.slug}/${thumbnail}`}
+            alt={event.title}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        )}
       </div>
       <div className="p-4">
         <h3 className="font-bold text-gray-900">{event.title}</h3>
         <p className="text-sm text-gray-500 mt-1">{event.description}</p>
         <span className="inline-flex items-center gap-1 text-sm text-astra-blue font-medium mt-3 group-hover:text-astra-blue-light transition-colors">
-          Ver fotos ({event.imageCount})
+          Ver fotos ({event.images.length})
           <svg
             className="h-3.5 w-3.5"
             fill="none"
@@ -50,6 +54,16 @@ function EventCard({ event }: { event: GalleryEvent }) {
 }
 
 export default function GaleriaPage() {
+  const events = getGalleryEvents();
+
+  const eventsByYear = events.reduce<Record<string, GalleryEvent[]>>((acc, event) => {
+    if (!acc[event.year]) acc[event.year] = [];
+    acc[event.year].push(event);
+    return acc;
+  }, {});
+
+  const sortedYears = Object.keys(eventsByYear).sort((a, b) => Number(b) - Number(a));
+
   return (
     <>
       {/* Page Header */}
@@ -69,18 +83,15 @@ export default function GaleriaPage() {
       <section className="py-16 sm:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-16">
-            {galleryEditions.map((edition) => (
-              <div key={edition.year}>
+            {sortedYears.map((year) => (
+              <div key={year}>
                 <div className="flex items-baseline gap-4 mb-6">
                   <h2 className="text-3xl font-bold text-gray-900">
-                    {edition.year}
+                    {year}
                   </h2>
-                  <span className="text-sm font-medium text-astra-blue bg-astra-blue/10 px-3 py-1 rounded-full">
-                    {edition.edition}
-                  </span>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {edition.events.map((event) => (
+                  {eventsByYear[year].map((event) => (
                     <EventCard key={event.slug} event={event} />
                   ))}
                 </div>
