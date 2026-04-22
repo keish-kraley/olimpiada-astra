@@ -21,6 +21,7 @@ const highlights = [
     title: "Educação",
     description:
       "Promovemos o ensino de matemática de forma lúdica e desafiadora para estudantes.",
+    color: "bg-sym-plus",
   },
   {
     icon: (
@@ -41,6 +42,7 @@ const highlights = [
     title: "Competição",
     description:
       "Desafios que estimulam o raciocínio lógico e a criatividade dos participantes.",
+    color: "bg-sym-minus",
   },
   {
     icon: (
@@ -61,6 +63,7 @@ const highlights = [
     title: "Comunidade",
     description:
       "Reunimos escolas e estudantes da região em torno da matemática.",
+    color: "bg-sym-times",
   },
 ];
 
@@ -72,44 +75,42 @@ const editions = [
   { year: "2016", edition: "21ª Edição" },
 ];
 
+function MathSymbols() {
+  return (
+    <div className="flex items-center gap-3 sm:gap-4 justify-center lg:justify-start mb-8">
+      <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-sym-plus flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-lg">
+        +
+      </div>
+      <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-sym-minus flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-lg">
+        −
+      </div>
+      <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-sym-times flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-lg">
+        ×
+      </div>
+      <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-sym-divide flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-lg">
+        ÷
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="chalkboard-bg wood-frame relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none select-none">
-          <span className="chalk-formula absolute top-[10%] left-[5%]">
-            4x = 5 · 2 · (3+8)
-          </span>
-          <span className="chalk-formula absolute top-[20%] right-[10%]">
-            π ≈ 3,14
-          </span>
-          <span className="chalk-formula absolute top-[40%] left-[15%]">
-            V = A · b · c
-          </span>
-          <span className="chalk-formula absolute top-[60%] right-[20%]">
-            Vm = S / T²
-          </span>
-          <span className="chalk-formula absolute top-[75%] left-[8%]">
-            a × D + 7 = 8 &gt; P
-          </span>
-          <span className="chalk-formula absolute top-[30%] right-[5%]">
-            T = 8.7.6 =
-          </span>
-          <span className="chalk-formula absolute bottom-[15%] right-[8%]">
-            x = 27 ÷ 4 → x = 6,75
-          </span>
-        </div>
-
+      <section className="banner-bg banner-border relative">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold chalk-text leading-tight">
-                Olimpíada Astra
+              <MathSymbols />
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                Olimpíada Estudantil
                 <br />
-                <span className="text-gold-light">de Matemática</span>
+                <span className="text-brand-blue-light">
+                  Astra de Matemática
+                </span>
               </h1>
-              <p className="mt-6 text-lg sm:text-xl text-chalk/80 max-w-2xl">
+              <p className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl">
                 Promovendo o ensino e a excelência em matemática para estudantes
                 desde 1996. Participe da maior competição de matemática da
                 região!
@@ -117,13 +118,13 @@ export default function Home() {
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   href="/sobre"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gold text-white font-semibold hover:bg-gold-light hover:text-chalkboard-dark transition-all shadow-lg"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-white text-brand-blue-dark font-semibold hover:bg-brand-blue-pale transition-all shadow-lg"
                 >
                   Saiba Mais
                 </Link>
                 <Link
                   href="/provas"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-chalk text-chalk font-semibold hover:bg-chalk hover:text-chalkboard-dark transition-all"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-white/60 text-white font-semibold hover:bg-white/10 transition-all"
                 >
                   Ver Provas Anteriores
                 </Link>
@@ -163,7 +164,9 @@ export default function Home() {
                 key={item.title}
                 className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-chalkboard text-chalk mb-6">
+                <div
+                  className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${item.color} text-white mb-6`}
+                >
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -197,7 +200,7 @@ export default function Home() {
                 href={`/galeria?ano=${ed.year}`}
                 className="group bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all hover:-translate-y-1"
               >
-                <div className="text-4xl font-bold text-astra-blue group-hover:text-chalkboard transition-colors">
+                <div className="text-4xl font-bold text-brand-blue group-hover:text-brand-blue-dark transition-colors">
                   {ed.year}
                 </div>
                 <div className="mt-2 text-sm text-gray-500">{ed.edition}</div>
@@ -208,7 +211,7 @@ export default function Home() {
           <div className="text-center mt-8">
             <Link
               href="/galeria"
-              className="inline-flex items-center gap-2 text-astra-blue hover:text-astra-blue-light font-semibold transition-colors"
+              className="inline-flex items-center gap-2 text-brand-blue hover:text-brand-blue-dark font-semibold transition-colors"
             >
               Ver todas as galerias
               <svg
@@ -230,19 +233,19 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="chalkboard-bg relative py-16 sm:py-20">
+      <section className="banner-bg relative py-16 sm:py-20">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold chalk-text">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Pronto para o desafio?
           </h2>
-          <p className="mt-4 text-lg text-chalk/80">
+          <p className="mt-4 text-lg text-white/80">
             Acesse as provas anteriores e prepare-se para a próxima edição da
             Olimpíada Astra de Matemática!
           </p>
           <div className="mt-8">
             <Link
               href="/provas"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-gold text-white font-bold text-lg hover:bg-gold-light hover:text-chalkboard-dark transition-all shadow-lg"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-brand-blue-dark font-bold text-lg hover:bg-brand-blue-pale transition-all shadow-lg"
             >
               Acessar Provas
             </Link>

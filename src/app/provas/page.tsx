@@ -147,12 +147,12 @@ export default function ProvasPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="chalkboard-bg wood-frame relative py-16 sm:py-24">
+      <section className="banner-bg banner-border relative py-16 sm:py-24">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold chalk-text">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white">
             Provas e Gabaritos
           </h1>
-          <p className="mt-4 text-lg text-chalk/80">
+          <p className="mt-4 text-lg text-white/80">
             Baixe as provas e gabaritos das edições anteriores para estudar e se
             preparar.
           </p>

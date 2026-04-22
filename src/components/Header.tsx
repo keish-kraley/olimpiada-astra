@@ -16,7 +16,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-chalkboard-dark text-white shadow-lg sticky top-0 z-50">
+    <header className="bg-brand-blue-dark text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           <Link href="/" className="flex items-center gap-3 shrink-0">
@@ -28,7 +28,7 @@ export default function Header() {
               className="h-8 w-auto"
             />
             <div className="hidden sm:block">
-              <span className="text-lg font-bold chalk-text">
+              <span className="text-lg font-bold text-white">
                 Olimpíada de Matemática
               </span>
             </div>
@@ -39,7 +39,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-4 py-2 rounded-md text-sm font-medium text-chalk hover:bg-chalkboard-light transition-colors"
+                className="px-4 py-2 rounded-md text-sm font-medium text-white/90 hover:bg-brand-blue-light/30 hover:text-white transition-colors"
               >
                 {item.label}
               </Link>
@@ -48,7 +48,7 @@ export default function Header() {
 
           <button
             type="button"
-            className="md:hidden p-2 rounded-md text-chalk hover:bg-chalkboard-light transition-colors"
+            className="md:hidden p-2 rounded-md text-white/90 hover:bg-brand-blue-light/30 transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -78,13 +78,13 @@ export default function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-chalkboard-dark border-t border-chalkboard-light">
+        <div className="md:hidden bg-brand-blue-dark border-t border-brand-blue-light/20">
           <div className="px-4 py-3 space-y-1">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="block px-4 py-2 rounded-md text-base font-medium text-chalk hover:bg-chalkboard-light transition-colors"
+                className="block px-4 py-2 rounded-md text-base font-medium text-white/90 hover:bg-brand-blue-light/30 hover:text-white transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}

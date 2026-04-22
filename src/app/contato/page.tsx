@@ -99,10 +99,10 @@ export default function ContatoPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="chalkboard-bg wood-frame relative py-16 sm:py-24">
+      <section className="banner-bg banner-border relative py-16 sm:py-24">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold chalk-text">Contato</h1>
-          <p className="mt-4 text-lg text-chalk/80">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white">Contato</h1>
+          <p className="mt-4 text-lg text-white/80">
             Entre em contato com a equipe da Olimpíada Astra de Matemática.
           </p>
         </div>
@@ -117,7 +117,7 @@ export default function ContatoPage() {
                 key={info.label}
                 className="bg-gray-50 rounded-xl p-6 flex items-start gap-4"
               >
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-chalkboard text-chalk flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-blue text-white flex items-center justify-center">
                   {info.icon}
                 </div>
                 <div>

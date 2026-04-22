@@ -27,16 +27,16 @@ export default async function GalleryDetailPage({
   return (
     <>
       {/* Page Header */}
-      <section className="chalkboard-bg wood-frame relative py-12 sm:py-20">
+      <section className="banner-bg banner-border relative py-12 sm:py-20">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="text-sm text-chalk/60 mb-2">
+          <div className="text-sm text-white/60 mb-2">
             {edition.edition} — {edition.year}
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold chalk-text">
+          <h1 className="text-3xl sm:text-4xl font-bold text-white">
             {event.title}
           </h1>
-          <p className="mt-3 text-chalk/80">{event.description}</p>
-          <p className="mt-2 text-sm text-chalk/50">
+          <p className="mt-3 text-white/80">{event.description}</p>
+          <p className="mt-2 text-sm text-white/50">
             {images.length} fotos
           </p>
         </div>

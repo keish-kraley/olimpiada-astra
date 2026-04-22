@@ -53,12 +53,12 @@ export default function GaleriaPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="chalkboard-bg wood-frame relative py-16 sm:py-24">
+      <section className="banner-bg banner-border relative py-16 sm:py-24">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold chalk-text">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white">
             Galeria de Fotos
           </h1>
-          <p className="mt-4 text-lg text-chalk/80">
+          <p className="mt-4 text-lg text-white/80">
             Reviva os melhores momentos das edições anteriores da Olimpíada Astra
             de Matemática.
           </p>

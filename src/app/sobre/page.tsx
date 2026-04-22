@@ -44,12 +44,12 @@ export default function SobrePage() {
   return (
     <>
       {/* Page Header */}
-      <section className="chalkboard-bg wood-frame relative py-16 sm:py-24">
+      <section className="banner-bg banner-border relative py-16 sm:py-24">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold chalk-text">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white">
             Sobre a Olimpíada
           </h1>
-          <p className="mt-4 text-lg text-chalk/80">
+          <p className="mt-4 text-lg text-white/80">
             Conheça a história e os valores da Olimpíada Astra Estudantil de
             Matemática.
           </p>
@@ -160,7 +160,7 @@ export default function SobrePage() {
             Nossa Trajetória
           </h2>
           <div className="relative">
-            <div className="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-chalkboard/20" />
+            <div className="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-brand-blue/20" />
             <div className="space-y-12">
               {timeline.map((item, index) => (
                 <div
@@ -172,7 +172,7 @@ export default function SobrePage() {
                   <div className="flex-1 md:text-right">
                     {index % 2 === 0 && (
                       <div className="bg-gray-50 rounded-xl p-6">
-                        <div className="text-sm font-bold text-astra-blue mb-1">
+                        <div className="text-sm font-bold text-brand-blue mb-1">
                           {item.year}
                         </div>
                         <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -184,11 +184,11 @@ export default function SobrePage() {
                       </div>
                     )}
                   </div>
-                  <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 w-3 h-3 bg-chalkboard rounded-full mt-8 ring-4 ring-white" />
+                  <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 w-3 h-3 bg-brand-blue rounded-full mt-8 ring-4 ring-white" />
                   <div className="flex-1 pl-10 md:pl-0">
                     {index % 2 !== 0 && (
                       <div className="bg-gray-50 rounded-xl p-6">
-                        <div className="text-sm font-bold text-astra-blue mb-1">
+                        <div className="text-sm font-bold text-brand-blue mb-1">
                           {item.year}
                         </div>
                         <h3 className="text-lg font-bold text-gray-900 mb-2">

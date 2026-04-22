@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-chalkboard: #1a5c2a;
-  --color-chalkboard-dark: #0f3d1a;
-  --color-chalkboard-light: #2a7a3a;
-  --color-chalk: #e8e8d0;
-  --color-wood: #8b6914;
-  --color-wood-dark: #6b4f10;
+  --color-brand-blue: #1565c0;
+  --color-brand-blue-dark: #0d47a1;
+  --color-brand-blue-light: #42a5f5;
+  --color-brand-blue-pale: #e3f2fd;
+  --color-sym-plus: #2196f3;
+  --color-sym-minus: #e53935;
+  --color-sym-times: #43a047;
+  --color-sym-divide: #ff9800;
   --color-astra-blue: #1e68bf;
   --color-astra-blue-light: #72a7e9;
   --color-gold: #d4a843;
@@ -19,41 +21,25 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-.chalkboard-bg {
-  background: linear-gradient(135deg, #1a5c2a 0%, #0f3d1a 50%, #1a5c2a 100%);
+.banner-bg {
+  background: linear-gradient(135deg, #1565c0 0%, #0d47a1 50%, #1565c0 100%);
   position: relative;
+  overflow: hidden;
 }
 
-.chalkboard-bg::before {
+.banner-bg::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image:
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 29px,
-      rgba(255, 255, 255, 0.03) 29px,
-      rgba(255, 255, 255, 0.03) 30px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 29px,
-      rgba(255, 255, 255, 0.03) 29px,
-      rgba(255, 255, 255, 0.03) 30px
-    );
+  background:
+    radial-gradient(circle at 85% 20%, rgba(66, 165, 245, 0.25) 0%, transparent 40%),
+    radial-gradient(circle at 10% 80%, rgba(66, 165, 245, 0.2) 0%, transparent 35%),
+    radial-gradient(circle at 50% 50%, rgba(66, 165, 245, 0.08) 0%, transparent 50%);
   pointer-events: none;
 }
 
-.wood-frame {
-  border: 12px solid #8b6914;
-  border-image: linear-gradient(135deg, #a07820, #6b4f10, #a07820, #6b4f10) 1;
-}
-
-.chalk-text {
-  color: #e8e8d0;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+.banner-border {
+  border-bottom: 4px solid #42a5f5;
 }
 
 @keyframes float {
@@ -78,12 +64,4 @@ body {
 
 .fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.chalk-formula {
-  font-family: "Courier New", monospace;
-  color: rgba(232, 232, 208, 0.15);
-  font-size: 1.2rem;
-  pointer-events: none;
-  user-select: none;
 }
