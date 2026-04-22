@@ -228,19 +228,13 @@ export default function SobrePage() {
               className="h-10 w-auto"
             />
             <Image
-              src="/img/logo-japi.gif"
+              src="/img/logo-japi.png"
               alt="Logo Japi"
               width={80}
               height={24}
               className="h-8 w-auto"
             />
-            <Image
-              src="/img/logo-integral.gif"
-              alt="Logo Integral"
-              width={80}
-              height={24}
-              className="h-8 w-auto"
-            />
+
           </div>
         </div>
       </section>

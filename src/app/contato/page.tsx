@@ -65,8 +65,8 @@ const contactInfo = [
       </svg>
     ),
     label: "Website",
-    value: "www.grupoastra.com.br",
-    href: "https://www.grupoastra.com.br",
+    value: "loja.astra-sa.com",
+    href: "https://loja.astra-sa.com",
   },
   {
     icon: (
@@ -159,7 +159,7 @@ export default function ContatoPage() {
           </h2>
           <div className="flex justify-center gap-6">
             <a
-              href="https://www.facebook.com/grupoastra"
+              href="https://www.facebook.com/aabordasoficial"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-white rounded-xl px-6 py-4 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
@@ -174,7 +174,7 @@ export default function ContatoPage() {
               <span className="font-medium text-gray-700">Facebook</span>
             </a>
             <a
-              href="https://www.youtube.com/grupoastra"
+              href="https://www.youtube.com/aabordasoficial"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-white rounded-xl px-6 py-4 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
@@ -189,7 +189,7 @@ export default function ContatoPage() {
               <span className="font-medium text-gray-700">YouTube</span>
             </a>
             <a
-              href="https://www.linkedin.com/company/grupoastra"
+              href="https://www.linkedin.com/company/aabordasoficial"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-white rounded-xl px-6 py-4 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
@@ -228,12 +228,12 @@ export default function ContatoPage() {
                 civil brasileira, com sede em Jundiaí, SP. Para mais informações
                 sobre o grupo, visite{" "}
                 <a
-                  href="https://www.grupoastra.com.br"
+                  href="https://loja.astra-sa.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-astra-blue hover:text-astra-blue-light font-medium transition-colors"
                 >
-                  www.grupoastra.com.br
+                  loja.astra-sa.com
                 </a>
                 .
               </p>
