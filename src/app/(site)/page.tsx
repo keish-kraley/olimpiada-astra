@@ -75,71 +75,44 @@ const editions = [
   { year: "2016", edition: "21ª Edição" },
 ];
 
-function MathSymbols() {
-  return (
-    <div className="flex items-center gap-3 sm:gap-4 justify-center lg:justify-start mb-8">
-      <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-sym-plus flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-lg">
-        +
-      </div>
-      <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-sym-minus flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-lg">
-        −
-      </div>
-      <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-sym-times flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-lg">
-        ×
-      </div>
-      <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-sym-divide flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-lg">
-        ÷
-      </div>
-    </div>
-  );
-}
-
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
       <section className="banner-bg banner-border relative">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="flex-1 text-center lg:text-left">
-              <MathSymbols />
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Olimpíada Estudantil
-                <br />
-                <span className="text-brand-blue-light">
-                  Astra de Matemática
-                </span>
-              </h1>
-              <p className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl">
-                Promovendo o ensino e a excelência em matemática para estudantes
-                desde 1996. Participe da maior competição de matemática da
-                região!
-              </p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link
-                  href="/sobre"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-white text-brand-blue-dark font-semibold hover:bg-brand-blue-pale transition-all shadow-lg"
-                >
-                  Saiba Mais
-                </Link>
-                <Link
-                  href="/provas"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-white/60 text-white font-semibold hover:bg-white/10 transition-all"
-                >
-                  Ver Provas Anteriores
-                </Link>
-              </div>
-            </div>
-
-            <div className="flex-shrink-0 float-animation">
-              <Image
-                src="/img/index.png"
-                alt="Mascote da Olimpíada Astra de Matemática"
-                width={400}
-                height={300}
-                className="drop-shadow-2xl"
-                priority
-              />
+          <div className="flex flex-col items-center gap-10 text-center">
+            <Image
+              src="/img/logo-olimpiada-branco.png"
+              alt="Logo Olimpíada Estudantil Astra de Matemática"
+              width={500}
+              height={250}
+              className="w-auto h-32 sm:h-44 lg:h-56 drop-shadow-2xl"
+              priority
+            />
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              Olimpíada Estudantil
+              <br />
+              Astra de Matemática
+            </h1>
+            <p className="text-lg sm:text-xl text-white/90 max-w-2xl">
+              Promovendo o ensino e a excelência em matemática para estudantes
+              desde 1996. Participe da maior competição de matemática da
+              região!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/sobre"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-white text-brand-blue-dark font-semibold hover:bg-brand-blue-pale transition-all shadow-lg"
+              >
+                Saiba Mais
+              </Link>
+              <Link
+                href="/provas"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-white/60 text-white font-semibold hover:bg-white/10 transition-all"
+              >
+                Ver Provas Anteriores
+              </Link>
             </div>
           </div>
         </div>

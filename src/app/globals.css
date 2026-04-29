@@ -5,10 +5,10 @@
   --color-brand-blue-dark: #0d47a1;
   --color-brand-blue-light: #42a5f5;
   --color-brand-blue-pale: #e3f2fd;
-  --color-sym-plus: #2196f3;
-  --color-sym-minus: #e53935;
-  --color-sym-times: #43a047;
-  --color-sym-divide: #ff9800;
+  --color-sym-plus: #5ba3e6;
+  --color-sym-minus: #5ba3e6;
+  --color-sym-times: #5ba3e6;
+  --color-sym-divide: #5ba3e6;
   --color-astra-blue: #1e68bf;
   --color-astra-blue-light: #72a7e9;
   --color-gold: #d4a843;
@@ -22,7 +22,7 @@ body {
 }
 
 .banner-bg {
-  background: linear-gradient(135deg, #1565c0 0%, #0d47a1 50%, #1565c0 100%);
+  background: url('/img/fundo-olimpiada.jpg') center center / cover no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -31,15 +31,12 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 85% 20%, rgba(66, 165, 245, 0.25) 0%, transparent 40%),
-    radial-gradient(circle at 10% 80%, rgba(66, 165, 245, 0.2) 0%, transparent 35%),
-    radial-gradient(circle at 50% 50%, rgba(66, 165, 245, 0.08) 0%, transparent 50%);
+  background: rgba(0, 80, 200, 0.15);
   pointer-events: none;
 }
 
 .banner-border {
-  border-bottom: 4px solid #42a5f5;
+  border-bottom: 4px solid #5ba3e6;
 }
 
 @keyframes float {
