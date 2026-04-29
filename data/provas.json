@@ -49,6 +49,104 @@
     "category": "prova"
   },
   {
+    "id": "p8",
+    "name": "Prova — 2011",
+    "file": "/pdf/provas-olimpiada-2011.pdf",
+    "year": "2011",
+    "category": "prova"
+  },
+  {
+    "id": "p9",
+    "name": "Prova — 2012",
+    "file": "/pdf/provas-olimpiada-2012.pdf",
+    "year": "2012",
+    "category": "prova"
+  },
+  {
+    "id": "p10",
+    "name": "Prova — 2013",
+    "file": "/pdf/provas-olimpiada-2013.pdf",
+    "year": "2013",
+    "category": "prova"
+  },
+  {
+    "id": "p11",
+    "name": "Prova — 2014",
+    "file": "/pdf/provas-olimpiada-2014.pdf",
+    "year": "2014",
+    "category": "prova"
+  },
+  {
+    "id": "p12",
+    "name": "Prova — 2015",
+    "file": "/pdf/provas-olimpiada-2015.pdf",
+    "year": "2015",
+    "category": "prova"
+  },
+  {
+    "id": "p13",
+    "name": "Prova — 2016",
+    "file": "/pdf/provas-olimpiada-2016.pdf",
+    "year": "2016",
+    "category": "prova"
+  },
+  {
+    "id": "p14",
+    "name": "Prova — 2017",
+    "file": "/pdf/provas-olimpiada-2017.pdf",
+    "year": "2017",
+    "category": "prova"
+  },
+  {
+    "id": "p15",
+    "name": "Prova — 2018",
+    "file": "/pdf/provas-olimpiada-2018.pdf",
+    "year": "2018",
+    "category": "prova"
+  },
+  {
+    "id": "p16",
+    "name": "Prova — 2019",
+    "file": "/pdf/provas-olimpiada-2019.pdf",
+    "year": "2019",
+    "category": "prova"
+  },
+  {
+    "id": "p17",
+    "name": "Prova — 2022",
+    "file": "/pdf/provas-olimpiada-2022.pdf",
+    "year": "2022",
+    "category": "prova"
+  },
+  {
+    "id": "p18",
+    "name": "Prova — 2023",
+    "file": "/pdf/provas-olimpiada-2023.pdf",
+    "year": "2023",
+    "category": "prova"
+  },
+  {
+    "id": "p19",
+    "name": "Prova — 2024",
+    "file": "/pdf/provas-olimpiada-2024.pdf",
+    "year": "2024",
+    "category": "prova"
+  },
+  {
+    "id": "p20",
+    "name": "Prova — 2025 (1ª Fase)",
+    "file": "/pdf/provas-olimpiada-2025-fase-1.pdf",
+    "year": "2025",
+    "category": "prova"
+  },
+  {
+    "id": "p21",
+    "name": "Prova — 2025 (2ª Fase)",
+    "file": "/pdf/provas-olimpiada-2025-fase-2.pdf",
+    "year": "2025",
+    "category": "prova"
+  },
+  {
     "id": "g1",
     "name": "Prova e Gabarito — 2010",
     "file": "/pdf/2010-prova-e-gabarito.pdf",
@@ -123,6 +221,13 @@
     "name": "Regulamento — 2025",
     "file": "/pdf/regulamento-2025.pdf",
     "year": "2025",
+    "category": "documento"
+  },
+  {
+    "id": "d6",
+    "name": "Regulamento — 2026",
+    "file": "/pdf/regulamento-2026.pdf",
+    "year": "2026",
     "category": "documento"
   },
   {
