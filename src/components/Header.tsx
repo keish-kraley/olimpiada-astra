@@ -21,17 +21,12 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
-              src="/img/astra-logo.svg"
-              alt="Logo Astra"
-              width={100}
-              height={30}
-              className="h-8 w-auto"
+              src="/img/logo-olimpiada-branco.png"
+              alt="Olimpíada Estudantil Astra de Matemática"
+              width={200}
+              height={60}
+              className="h-10 sm:h-12 w-auto"
             />
-            <div className="hidden sm:block">
-              <span className="text-lg font-bold text-white">
-                Olimpíada de Matemática
-              </span>
-            </div>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
