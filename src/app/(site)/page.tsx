@@ -90,11 +90,6 @@ export default function Home() {
               className="w-auto h-32 sm:h-44 lg:h-56 drop-shadow-2xl"
               priority
             />
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              Olimpíada Estudantil
-              <br />
-              Astra de Matemática
-            </h1>
             <p className="text-lg sm:text-xl text-white/90 max-w-2xl">
               Promovendo o ensino e a excelência em matemática para estudantes
               desde 1996. Participe da maior competição de matemática da
