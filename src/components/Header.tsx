@@ -21,11 +21,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
-              src="/img/logo-olimpiada-branco.png"
+              src="/img/logo-olimpiada-horizontal.png"
               alt="Olimpíada Estudantil Astra de Matemática"
-              width={200}
+              width={300}
               height={60}
-              className="h-10 sm:h-12 w-auto"
+              className="h-12 sm:h-14 w-auto"
             />
           </Link>
 
